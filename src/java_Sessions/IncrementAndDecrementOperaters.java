@@ -115,8 +115,10 @@ public class IncrementAndDecrementOperaters {
 		
 		
 		char ch='A';
-		System.out.println(ch++);
+		System.out.println(ch++);//-->
 		System.out.println(ch);
+		
+		
 	
 		
 	}
