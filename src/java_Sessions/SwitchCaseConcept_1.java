@@ -6,7 +6,7 @@ public class SwitchCaseConcept_1 {
 
 		String name = "Mahesh";
 		switch (name) {
-		case "Ramesh":
+		case "Ramesh" :
 			System.out.println("He is Ramesh");
 		case "Kumar":
 			System.out.println("He is Ramesh");
