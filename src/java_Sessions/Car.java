@@ -48,8 +48,41 @@ public class Car {
 		System.out.println(c2.name+" "+c2.modalNumber+" "+c2.price+" "+c2.color+" "+Car.wheels+" "+Car.keys);
 		System.out.println(c3.name+" "+c3.modalNumber+" "+c3.price+" "+c3.color+" "+Car.wheels+" "+Car.keys);
 		
+		System.out.println("**********");
+		System.out.println(c1.name+" "+c2.name+" "+c3.name);
+		System.out.println(c1.price+" "+c2.price+" "+c3.price);
+		System.out.println(c1.modalNumber+" "+c2.modalNumber+" "+c3.modalNumber);
+		
 		
 
 	}
+	
+	public void printPrimeNumbers(int n) {
+		for(int i=2;i<=n;i++) {
+			boolean isPrime=true;
+			for(int j=2;j<=i-1;j++) {
+				if(i%j==0) {
+					isPrime=false;
+					break;
+				}
+			}
+			if(isPrime) {
+				System.out.print(i+" ");
+			}
+		}
+	}
+	
+	public void addTwoArrays(int[] a, int[] b) {
+		if(a.length!=b.length) {
+			System.out.println("Arrays are not of same length");
+			return;
+		}
+		int[] c= new int[a.length];
+		for(int i=0;i<a.length;i++) {
+			c[i]=a[i]+b[i];
+			System.out.print(c[i]+" ");
+		}
+	}
+	
 
 }
